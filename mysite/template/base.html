@@ -29,7 +29,7 @@
     />
     <!--mdb-end-->
 
-    <title>Hello, world!</title>
+    <title>{% block title %}{% endblock title %} |Hello, world!</title>
   </head>
   <body>
     <!--Navbar-->
@@ -94,6 +94,7 @@
       </div>
       <!-- Container wrapper -->
     </nav>
+    <h1>{% block body %}{% endblock body %} {{variable}}</h1>
     <!-- Navbar -->
     <!--NAVBAR end-->
 
