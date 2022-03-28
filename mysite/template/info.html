@@ -1,0 +1,26 @@
+{% extends 'base.html' %} {% block body %}
+<form method="POST" action="/info">
+  {% csrf_token %}
+  <div class="mb-3">
+    <label for="email" class="form-label">Email address</label>
+    <input
+      type="text"
+      class="form-control"
+      name="email"
+      id="email"
+      aria-describedby="emailHelp"
+    />
+    <label for="name" class="form-label">Email address</label>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      id="name"
+      aria-describedby="emailHelp"
+    />
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+{% endblock body %}
